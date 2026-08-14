@@ -35,13 +35,7 @@
   var lastClick = Date.now();
 
   function goTo(url) {
-    var overlay = $('#pageTransition');
-    if (overlay) {
-      overlay.classList.add('active');
-      setTimeout(function () { window.location.href = url; }, 460);
-    } else {
-      window.location.href = url;
-    }
+    window.location.href = url;
   }
 
   doc.addEventListener('click', function (e) {
