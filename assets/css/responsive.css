@@ -9,7 +9,7 @@
   .steps-connect { display: none; }
   .team-grid { grid-template-columns: repeat(3, 1fr); }
   .blog-grid { grid-template-columns: repeat(2, 1fr); }
-  .contact-cards { grid-template-columns: repeat(2, 1fr); }
+  .info-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
@@ -57,9 +57,13 @@
   .section { padding-block: 62px; }
   .section-head { margin-bottom: 40px; }
   .services-grid, .feature-grid, .offers-grid, .pricing-grid, .blog-grid, .operators-grid, .team-grid, .sitemap-grid, .vision-grid { grid-template-columns: 1fr; }
-  .contact-cards { grid-template-columns: 1fr; }
+  .info-grid { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 34px; }
   .footer-bottom-inner { justify-content: center; text-align: center; }
+  .corp-card { grid-template-columns: 1fr; }
+  .corp-body { padding: 32px 26px; }
+  .corp-media { min-height: 220px; }
+  .timings-card .timing-day { padding: 14px 18px; font-size: .9rem; }
   .rz-row { grid-template-columns: 1fr; }
   .operator-pick { grid-template-columns: repeat(2, 1fr); }
   .recharge-head { justify-content: center; text-align: center; }

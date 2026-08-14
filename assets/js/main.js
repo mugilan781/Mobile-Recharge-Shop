@@ -433,15 +433,19 @@
   }
 
   function storeStatus() {
+    var now = new Date();
+    var day = now.getDay();
+    var mins = now.getHours() * 60 + now.getMinutes();
+    var open = (day >= 1 && day <= 6 && mins >= 480 && mins < 1290) || (day === 0 && mins >= 600 && mins < 1080);
     $$('[data-store-status]').forEach(function (el) {
-      var now = new Date();
-      var day = now.getDay();
-      var mins = now.getHours() * 60 + now.getMinutes();
-      var open = (day >= 1 && day <= 6 && mins >= 480 && mins < 1290) || (day === 0 && mins >= 600 && mins < 1080);
       var label = el.querySelector('span:last-child');
       if (label) label.textContent = open ? 'Open Now' : 'Currently Closed';
       el.classList.toggle('is-closed', !open);
     });
+    var statusText = document.getElementById('status-text');
+    var statusNote = document.getElementById('status-note');
+    if (statusText) statusText.textContent = open ? 'Open Now — we are at the counter.' : 'Currently closed — see timings below.';
+    if (statusNote) statusNote.textContent = open ? 'Come on in, no appointment needed.' : 'We open today at ' + (day === 0 ? '10:00 AM' : '8:00 AM') + '.';
   }
   storeStatus();
   setInterval(storeStatus, 30000);
