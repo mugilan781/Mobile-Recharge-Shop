@@ -10,8 +10,7 @@
   .team-grid { grid-template-columns: repeat(3, 1fr); }
   .blog-grid { grid-template-columns: repeat(2, 1fr); }
   .contact-cards { grid-template-columns: repeat(2, 1fr); }
-  .footer-grid { grid-template-columns: 1.4fr 1fr 1fr; }
-  .footer-contact { grid-column: span 3; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 1024px) {
@@ -46,8 +45,6 @@
   .recharge-wrap { margin-top: 0; }
   .recharge-panel { padding: 28px; }
   .hero-slider { min-height: 600px; }
-  .newsletter-inner { justify-content: center; text-align: center; }
-  .newsletter-text p { margin-inline: auto; }
   .t-card { flex-basis: 50%; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
   .contact-layout { grid-template-columns: 1fr; }
@@ -62,7 +59,6 @@
   .services-grid, .feature-grid, .offers-grid, .pricing-grid, .blog-grid, .operators-grid, .team-grid, .sitemap-grid, .vision-grid { grid-template-columns: 1fr; }
   .contact-cards { grid-template-columns: 1fr; }
   .footer-grid { grid-template-columns: 1fr; gap: 34px; }
-  .footer-contact { grid-column: auto; }
   .footer-bottom-inner { justify-content: center; text-align: center; }
   .rz-row { grid-template-columns: 1fr; }
   .operator-pick { grid-template-columns: repeat(2, 1fr); }
