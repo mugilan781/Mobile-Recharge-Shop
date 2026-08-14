@@ -221,7 +221,8 @@
       return 3;
     }
 
-    var max = Math.max(cards.length - perView(), 0);
+    var pv = perView();
+    var max = Math.max(cards.length - pv, 0);
 
     function renderDots() {
       if (!dotsWrap) return;
@@ -238,10 +239,22 @@
     }
 
     function update() {
+      var currentPv = perView();
+      cards.forEach(function (card) {
+        card.style.flex = '0 0 ' + (100 / currentPv) + '%';
+        card.style.maxWidth = (100 / currentPv) + '%';
+      });
+      max = Math.max(cards.length - currentPv, 0);
       if (idx > max) idx = max;
       if (idx < 0) idx = 0;
-      track.style.transform = 'translateX(-' + (idx * 100 / perView()) + '%)';
-      if (dotsWrap) $$('button', dotsWrap).forEach(function (d, n) { d.classList.toggle('is-active', n === idx); });
+      track.style.transform = 'translateX(-' + (idx * 100 / currentPv) + '%)';
+      if (dotsWrap) {
+        var dotButtons = $$('button', dotsWrap);
+        if (dotButtons.length !== (max + 1)) {
+          renderDots();
+        }
+        $$('button', dotsWrap).forEach(function (d, n) { d.classList.toggle('is-active', n === idx); });
+      }
     }
 
     if (prev) prev.addEventListener('click', function () { idx = Math.max(idx - 1, 0); update(); });
@@ -258,7 +271,7 @@
     var raf = null;
     window.addEventListener('resize', function () {
       clearTimeout(raf);
-      raf = setTimeout(function () { max = Math.max(cards.length - perView(), 0); renderDots(); update(); }, 200);
+      raf = setTimeout(function () { update(); }, 200);
     });
 
     renderDots();

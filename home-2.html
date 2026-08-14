@@ -49,7 +49,7 @@
     <symbol id="i-arrow-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/></symbol>
     <symbol id="i-arrow-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></symbol>
     <symbol id="i-star" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></symbol>
-    <symbol id="i-quote" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M10 11H6a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6a6 6 0 0 1-6 6"/><path d="M22 11h-4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6a6 6 0 0 1-6 6"/></symbol>
+    <symbol id="i-quote" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M14.017 21v-7.391c0-5.704 3.731-9.57 10.016-10.458v3.413c-3.086.502-4.548 2.397-4.548 5.676h4.07v8.76h-9.538zm-11.538 0v-7.391c0-5.704 3.732-9.57 10.017-10.458v3.413c-3.086.502-4.548 2.397-4.548 5.676h4.07v8.76h-9.538z"/></symbol>
     <symbol id="i-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
     <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></symbol>
     <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
@@ -170,10 +170,12 @@
   <main id="main">
     <section class="hero hero-static" aria-labelledby="hero2-title">
       <div class="slide is-active">
-        <img class="bg-img" src="assets/img/retail_payment_counter_1786706199933.jpg" alt="Retail payment counter" loading="eager">
-        <div class="blob b1"></div>
-        <div class="blob b2"></div>
-        <div class="blob b3"></div>
+        <div class="slide-bg">
+          <img class="bg-img" src="assets/img/retail_payment_counter_1786706199933.jpg" alt="Retail payment counter" loading="eager">
+          <div class="blob b1"></div>
+          <div class="blob b2"></div>
+          <div class="blob b3"></div>
+        </div>
       </div>
       <div class="container slide-inner" style="padding-bottom:120px; max-width:100%">
         <div class="hero-split">
@@ -208,41 +210,49 @@
               </div>
               <div class="mock-foot"><span>Cashback earned this month</span><strong>₹187.50</strong></div>
             </div>
-            <div class="hero-float" style="top:-20px; right:-18px; animation-delay:.6s">
-              <span class="float-ic" style="background:var(--grad-mint)"><svg class="ic"><use href="#i-shield"></use></svg></span>
-              <div><strong>Payment Verified</strong><small>Instantly confirmed</small></div>
-            </div>
-            <div class="hero-float" style="bottom:-16px; left:-22px; animation-delay:1.2s">
-              <span class="float-ic" style="background:var(--grad-cyan)"><svg class="ic"><use href="#i-award"></use></svg></span>
-              <div><strong>Rated 4.9/5</strong><small>18,400+ reviews</small></div>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="section stats-band" style="padding-block:56px" aria-label="Key numbers">
+    <section class="section stats-band" style="padding-block:60px" aria-label="Key numbers">
       <div class="container">
         <div class="stats-grid">
-          <div class="stat-item reveal">
-            <svg class="ic"><use href="#i-users"></use></svg>
-            <div class="stat-num"><span data-count="2000000" data-suffix="+">0</span></div>
-            <div class="stat-label">Customers Served</div>
+          <div class="stat-card reveal">
+            <div class="stat-card-icon">
+              <svg class="ic"><use href="#i-users"></use></svg>
+            </div>
+            <div class="stat-card-content">
+              <div class="stat-card-num"><span data-count="2000000" data-suffix="+">0</span></div>
+              <div class="stat-card-label">Customers Served</div>
+            </div>
           </div>
-          <div class="stat-item reveal" style="--d:.1s">
-            <svg class="ic"><use href="#i-wallet"></use></svg>
-            <div class="stat-num"><span data-count="120000000" data-suffix="+">0</span></div>
-            <div class="stat-label">Rupees Processed / Mo</div>
+          <div class="stat-card reveal" style="--d:.1s">
+            <div class="stat-card-icon">
+              <svg class="ic"><use href="#i-wallet"></use></svg>
+            </div>
+            <div class="stat-card-content">
+              <div class="stat-card-num"><span data-count="120000000" data-suffix="+">0</span></div>
+              <div class="stat-card-label">Rupees Processed / Mo</div>
+            </div>
           </div>
-          <div class="stat-item reveal" style="--d:.2s">
-            <svg class="ic"><use href="#i-briefcase"></use></svg>
-            <div class="stat-num"><span data-count="1200" data-suffix="+">0</span></div>
-            <div class="stat-label">Corporate &amp; Reseller Clients</div>
+          <div class="stat-card reveal" style="--d:.2s">
+            <div class="stat-card-icon">
+              <svg class="ic"><use href="#i-briefcase"></use></svg>
+            </div>
+            <div class="stat-card-content">
+              <div class="stat-card-num"><span data-count="1200" data-suffix="+">0</span></div>
+              <div class="stat-card-label">Corporate Clients</div>
+            </div>
           </div>
-          <div class="stat-item reveal" style="--d:.3s">
-            <svg class="ic"><use href="#i-star"></use></svg>
-            <div class="stat-num"><span data-count="4.9" data-suffix="">0</span></div>
-            <div class="stat-label">Average Google Rating</div>
+          <div class="stat-card reveal" style="--d:.3s">
+            <div class="stat-card-icon">
+              <svg class="ic"><use href="#i-star"></use></svg>
+            </div>
+            <div class="stat-card-content">
+              <div class="stat-card-num"><span data-count="4.9" data-suffix="">0</span></div>
+              <div class="stat-card-label">Google Rating</div>
+            </div>
           </div>
         </div>
       </div>
@@ -435,14 +445,11 @@
     <section class="section section-soft" aria-labelledby="app-title">
       <div class="container split">
         <div class="reveal-left">
-          <div class="img-frame" style="min-height:420px">
+          <div class="img-frame reveal" style="min-height:420px; --d:.1s">
             <span class="grad"></span>
             <span class="grid-pat"></span>
             <span class="blob bl"></span>
-            <div class="abt-img reveal" style="--d:.1s">
             <img class="img" src="assets/img/rechargezone_store_interior_1786706310450.jpg" alt="Inside the RechargeZone neighbourhood store" loading="lazy">
-            <div class="blob b1"></div>
-            </div>
             <div class="experience-badge">
               <span class="exp-ic"><svg class="ic"><use href="#i-percent"></use></svg></span>
               <div><strong>2% More</strong><small>cashback via wallet</small></div>
