@@ -1061,3 +1061,11 @@ textarea.field-input { min-height: 140px; resize: vertical; padding: 14px 16px; 
 .newsletter-card p { color: rgba(255,255,255,.82); margin: 0; font-size: .95rem; }
 .newsletter-card .newsletter-form { flex-direction: column; align-items: stretch; gap: 12px; max-width: 100%; min-width: 0; }
 .nl-group { display: flex; gap: 10px; width: 100%; }
+
+/* ---------- Site images ---------- */
+.slide-bg > .bg-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: .38; }
+.img-frame > .img, .fp-media > .img, .post-thumb > .img, .corp-visual > .img, .w-thumb > .img, .blog-thumb > .img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.team-avatar { overflow: hidden; }
+.team-avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+.author-avatar { overflow: hidden; }
+.author-avatar img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
