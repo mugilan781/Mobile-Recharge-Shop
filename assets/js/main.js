@@ -3,6 +3,7 @@
 
   var doc = document;
   var root = doc.documentElement;
+  var preStart = Date.now();
   var $ = function (s, c) { return (c || doc).querySelector(s); };
   var $$ = function (s, c) { return Array.prototype.slice.call((c || doc).querySelectorAll(s)); };
 
@@ -26,8 +27,12 @@
   window.addEventListener('load', function () {
     var pre = $('#preloader');
     if (pre) {
-      pre.classList.add('done');
-      setTimeout(function () { if (pre && pre.parentNode) pre.parentNode.removeChild(pre); }, 700);
+      var minShow = 970;
+      var wait = Math.max(0, minShow - (Date.now() - preStart));
+      setTimeout(function () {
+        pre.classList.add('done');
+        setTimeout(function () { if (pre && pre.parentNode) pre.parentNode.removeChild(pre); }, 700);
+      }, wait);
     }
     revealInit();
   });
