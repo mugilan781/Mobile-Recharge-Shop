@@ -219,23 +219,6 @@ p { margin: 0 0 14px; }
 .nav-link:hover, .nav-link.active { color: var(--violet); }
 [data-theme="dark"] .nav-link:hover, [data-theme="dark"] .nav-link.active { color: #5EEAD4; }
 .nav-link:hover::after, .nav-link.active::after { transform: scaleX(1); }
-.has-drop { position: relative; }
-.has-drop > .nav-link .chev { width: 15px; height: 15px; opacity: .7; transition: transform .3s var(--ease); }
-.has-drop:hover > .nav-link .chev { transform: rotate(180deg); }
-.dropdown {
-  position: absolute; top: calc(100% + 12px); left: 0; min-width: 240px;
-  background: var(--bg-surface); border: 1px solid var(--border); border-radius: var(--radius);
-  box-shadow: var(--shadow-lg); padding: 10px; opacity: 0; visibility: hidden; transform: translateY(14px);
-  transition: opacity .3s var(--ease), transform .3s var(--ease), visibility .3s;
-}
-[dir="rtl"] .dropdown { left: auto; right: 0; }
-.has-drop:hover .dropdown, .has-drop:focus-within .dropdown { opacity: 1; visibility: visible; transform: translateY(0); }
-.dropdown a { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-radius: var(--radius-sm); color: var(--text-2); font-weight: 500; font-size: .94rem; }
-.dropdown a::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--grad-primary); opacity: 0; transition: opacity .25s; }
-.dropdown a:hover { background: var(--bg-soft); color: var(--violet); transform: translateX(4px); }
-[dir="rtl"] .dropdown a:hover { transform: translateX(-4px); }
-.dropdown a:hover::before { opacity: 1; }
-
 .header-actions { display: flex; align-items: center; gap: 10px; }
 .icon-btn { width: 44px; height: 44px; border-radius: var(--radius-sm); display: grid; place-items: center; background: var(--bg-soft); color: var(--text-1); position: relative; transition: background .3s, color .3s, transform .3s var(--ease); }
 .icon-btn:hover { background: rgba(14, 124, 126, .14); color: var(--violet); transform: translateY(-2px); }
@@ -244,7 +227,7 @@ p { margin: 0 0 14px; }
 .icon-btn .i-moon { display: none; }
 [data-theme="dark"] .icon-btn .i-sun { display: none; }
 [data-theme="dark"] .icon-btn .i-moon { display: block; }
-.dir-label { font-family: var(--font-head); font-size: .6rem; font-weight: 800; letter-spacing: .05em; position: absolute; bottom: 4px; inset-inline: 0; text-align: center; color: var(--violet); }
+.dir-label { font-family: var(--font-head); font-size: .8rem; font-weight: 800; letter-spacing: .08em; line-height: 1; color: var(--violet); }
 [data-theme="dark"] .dir-label { color: #5EEAD4; }
 .nav-toggle { display: none; }
 .nav-toggle .i-close { display: none; }

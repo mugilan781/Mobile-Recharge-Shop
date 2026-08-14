@@ -17,6 +17,12 @@
   root.setAttribute('data-theme', theme);
   root.setAttribute('dir', lsGet('rz-dir') || 'ltr');
 
+  var dirLabel = $('#dirLabel');
+  function syncDirLabel() {
+    if (dirLabel) dirLabel.textContent = root.getAttribute('dir') === 'rtl' ? 'RTL' : 'LTR';
+  }
+  syncDirLabel();
+
   window.addEventListener('load', function () {
     var pre = $('#preloader');
     if (pre) {
@@ -81,6 +87,7 @@
       var next = root.getAttribute('dir') === 'rtl' ? 'ltr' : 'rtl';
       root.setAttribute('dir', next);
       lsSet('rz-dir', next);
+      syncDirLabel();
     });
   }
 
@@ -95,15 +102,6 @@
   $$('.main-nav a').forEach(function (a) {
     a.addEventListener('click', function () {
       if (doc.body.classList.contains('nav-open')) doc.body.classList.remove('nav-open');
-    });
-  });
-
-  $$('.main-nav .has-drop > .nav-link').forEach(function (link) {
-    link.addEventListener('click', function (e) {
-      if (window.innerWidth <= 992) {
-        e.preventDefault();
-        link.parentNode.classList.toggle('open');
-      }
     });
   });
 
