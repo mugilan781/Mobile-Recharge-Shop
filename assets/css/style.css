@@ -576,7 +576,6 @@ select.field-input.has-icon { padding-inline-start: 48px; }
 .footer-contact ul li a:hover { padding-inline-start: 0; color: #fff; }
 .footer-contact ul li { display: flex; align-items: flex-start; gap: 10px; font-size: .93rem; color: #94A3B8; margin-bottom: 12px; }
 .footer-contact .ic { width: 18px; height: 18px; color: var(--cyan); margin-top: 3px; }
-.footer-timings { margin-top: 18px; border: 1px solid rgba(255,255,255,.1); border-radius: var(--radius); padding: 16px 18px; background: rgba(255,255,255,.03); }
 .timing-row { display: flex; justify-content: space-between; align-items: center; padding: 7px 0; border-bottom: 1px dashed rgba(255,255,255,.1); font-size: .88rem; }
 .timing-row:last-child { border-bottom: 0; }
 .timing-row strong { color: #fff; font-family: var(--font-head); font-weight: 600; }
