@@ -18,9 +18,10 @@
   root.setAttribute('data-theme', theme);
   root.setAttribute('dir', lsGet('rz-dir') || 'ltr');
 
-  var dirLabel = $('#dirLabel');
   function syncDirLabel() {
-    if (dirLabel) dirLabel.textContent = root.getAttribute('dir') === 'rtl' ? 'RTL' : 'LTR';
+    $$('.dir-label').forEach(function (label) {
+      label.textContent = root.getAttribute('dir') === 'rtl' ? 'RTL' : 'LTR';
+    });
   }
   syncDirLabel();
 
@@ -105,6 +106,8 @@
     });
   }
 
+
+
   $$('.main-nav a').forEach(function (a) {
     a.addEventListener('click', function () {
       if (doc.body.classList.contains('nav-open')) doc.body.classList.remove('nav-open');
@@ -114,6 +117,16 @@
   doc.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && doc.body.classList.contains('nav-open')) {
       doc.body.classList.remove('nav-open');
+    }
+  });
+
+  // Click outside to close menu
+  doc.addEventListener('click', function (e) {
+    if (doc.body.classList.contains('nav-open')) {
+      if (!e.target.closest('#mainNav') && !e.target.closest('#navToggle')) {
+        doc.body.classList.remove('nav-open');
+        if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+      }
     }
   });
 

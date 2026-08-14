@@ -2,6 +2,11 @@
    Responsive breakpoints
    ========================================================================== */
 
+@keyframes drawerFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 @media (max-width: 1200px) {
   .services-grid, .feature-grid, .offers-grid, .pricing-grid { grid-template-columns: repeat(2, 1fr); }
   .operators-grid { grid-template-columns: repeat(3, 1fr); }
@@ -37,15 +42,38 @@
   .hero-mock { max-width: 440px; margin-inline: auto; }
   .nav-toggle { display: grid; }
   .main-nav {
-    position: fixed; top: 0; right: 0; bottom: 0; width: min(360px, 86vw); z-index: 400;
-    background: var(--bg-surface); border-inline-start: 1px solid var(--border);
+    position: fixed; top: 0; right: 0; bottom: 0; left: auto;
+    width: 360px; max-width: 86vw; z-index: 90; visibility: hidden;
+    background: var(--bg-surface); background-color: var(--bg-surface);
+    border-inline-start: 1px solid var(--border);
     box-shadow: -20px 0 60px rgba(15,23,42,.2); transform: translateX(100%);
-    transition: transform .5s var(--ease); padding: 90px 28px 34px; overflow-y: auto;
+    transition: transform .5s var(--ease), visibility .5s var(--ease); padding: 130px 28px 34px;
+    overflow-y: auto; overflow-x: hidden;
+    overscroll-behavior: contain; -webkit-overflow-scrolling: touch;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
   }
   [dir="rtl"] .main-nav { right: auto; left: 0; transform: translateX(-100%); box-shadow: 20px 0 60px rgba(15,23,42,.2); }
-  body.nav-open .main-nav { transform: translateX(0); }
+  body.nav-open .main-nav { transform: translateX(0); visibility: visible; }
   body.nav-open { overflow: hidden; }
-  body.nav-open .site-header { backdrop-filter: none; -webkit-backdrop-filter: none; }
+  body.nav-open::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(11, 59, 67, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 80;
+    animation: drawerFadeIn 0.3s var(--ease) forwards;
+  }
+  body.nav-open .site-header {
+    background: var(--bg-surface) !important;
+    box-shadow: var(--shadow) !important;
+    border-bottom: 1px solid var(--border) !important;
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
   .nav-toggle { z-index: 500; }
   .nav-list { flex-direction: column; align-items: stretch; gap: 6px; }
   .nav-link { padding: 14px 16px; font-size: 1.05rem; justify-content: space-between; border-radius: var(--radius-sm); }
