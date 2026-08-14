@@ -56,7 +56,11 @@
   }
   [dir="rtl"] .main-nav { right: auto; left: 0; transform: translateX(-100%); box-shadow: 20px 0 60px rgba(15,23,42,.2); }
   body.nav-open .main-nav { transform: translateX(0); visibility: visible; }
-  body.nav-open { overflow: hidden; }
+  html.nav-open,
+  body.nav-open {
+    overflow: hidden !important;
+    height: 100% !important;
+  }
   body.nav-open::after {
     content: "";
     position: fixed;
@@ -68,6 +72,12 @@
     animation: drawerFadeIn 0.3s var(--ease) forwards;
   }
   body.nav-open .site-header {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 100 !important;
     background: var(--bg-surface) !important;
     box-shadow: var(--shadow) !important;
     border-bottom: 1px solid var(--border) !important;

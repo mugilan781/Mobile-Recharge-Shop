@@ -99,24 +99,27 @@
   }
 
   var navToggle = $('#navToggle');
+  function closeMenu() {
+    doc.body.classList.remove('nav-open');
+    doc.documentElement.classList.remove('nav-open');
+    if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+  }
+
   if (navToggle) {
     navToggle.addEventListener('click', function () {
       var open = doc.body.classList.toggle('nav-open');
+      doc.documentElement.classList.toggle('nav-open', open);
       this.setAttribute('aria-expanded', open ? 'true' : 'false');
     });
   }
 
-
-
   $$('.main-nav a').forEach(function (a) {
-    a.addEventListener('click', function () {
-      if (doc.body.classList.contains('nav-open')) doc.body.classList.remove('nav-open');
-    });
+    a.addEventListener('click', closeMenu);
   });
 
   doc.addEventListener('keydown', function (e) {
     if (e.key === 'Escape' && doc.body.classList.contains('nav-open')) {
-      doc.body.classList.remove('nav-open');
+      closeMenu();
     }
   });
 
@@ -124,8 +127,7 @@
   doc.addEventListener('click', function (e) {
     if (doc.body.classList.contains('nav-open')) {
       if (!e.target.closest('#mainNav') && !e.target.closest('#navToggle')) {
-        doc.body.classList.remove('nav-open');
-        if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
+        closeMenu();
       }
     }
   });
