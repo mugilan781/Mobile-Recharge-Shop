@@ -337,7 +337,7 @@
 
         var operatorName = operator.getAttribute('data-name') || 'Operator';
         var operatorLogo = operator.getAttribute('data-logo') || 'OP';
-        var logoGrad = operator.getAttribute('data-grad') || 'linear-gradient(135deg,#7C3AED,#312E81)';
+        var logoGrad = operator.getAttribute('data-grad') || 'linear-gradient(135deg,#0E7C7E,#0B3B43)';
         var txn = 'RZ' + Date.now().toString(36).toUpperCase().slice(-8);
 
         $('.m-operator-logo', wrap).textContent = operatorLogo;
