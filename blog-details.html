@@ -194,14 +194,14 @@
           <svg class="ic sep"><use href="#i-chevron-right"></use></svg>
           <a href="blog.html">Blog</a>
           <svg class="ic sep"><use href="#i-chevron-right"></use></svg>
-          <span aria-current="page">Prepaid Plan Cheatsheet</span>
+          <span id="bdCrumbTitle" aria-current="page">Prepaid Plan Cheatsheet</span>
         </nav>
-        <span class="post-cat"><svg class="ic"><use href="#i-mobile"></use></svg> Recharge Guide</span>
+        <span class="post-cat" id="bdCatChip"><svg class="ic"><use href="#i-mobile"></use></svg> Recharge Guide</span>
         <h1 id="bd-banner-title">The 2026 Prepaid Plan Cheatsheet: How To Save ₹2,400 A Year</h1>
         <div class="post-meta">
-          <span><svg class="ic"><use href="#i-user"></use></svg> Rohit Arora</span>
-          <span><svg class="ic"><use href="#i-calendar"></use></svg> Aug 5, 2026</span>
-          <span><svg class="ic"><use href="#i-clock"></use></svg> 8 min read</span>
+          <span><svg class="ic"><use href="#i-user"></use></svg> <span id="bdMetaAuthor">Rohit Arora</span></span>
+          <span><svg class="ic"><use href="#i-calendar"></use></svg> <span id="bdMetaDate">Aug 5, 2026</span></span>
+          <span><svg class="ic"><use href="#i-clock"></use></svg> <span id="bdMetaRead">8 min read</span></span>
         </div>
       </div>
     </section>
@@ -210,9 +210,13 @@
       <div class="container post-layout">
         <div class="post-main">
           <article class="post-body reveal">
-            <p class="lead">Every week, someone walks in holding a ₹239 monthly pack and asks if it's good value. The honest answer, most of the time, is no. Here's the ranking we actually use at the counter — and the math behind it.</p>
+            <figure class="article-hero">
+              <img id="postImg" src="assets/img/blog_prepaid_plans_1786707172939.jpg" alt="The 2026 prepaid plan cheatsheet" loading="eager">
+            </figure>
+            <p class="lead" id="postLead">Every week, someone walks in holding a ₹239 monthly pack and asks if it's good value. The honest answer, most of the time, is no. Here's the ranking we actually use at the counter — and the math behind it.</p>
 
-            <div class="toc-widget">
+            <div id="postBody">
+              <div class="toc-widget">
               <strong>In this guide</strong>
               <ul>
                 <li><a href="#cheat-what"><svg class="ic"><use href="#i-chevron-right"></use></svg> What we ranked</a></li>
@@ -276,9 +280,10 @@
                 <div class="faq-a"><div class="faq-a-inner">It genuinely depends on your street. We test all three monthly and publish the map at the counter — ask for the current results.</div></div>
               </div>
             </div>
+            </div>
 
             <div class="post-tags-row">
-              <span class="post-tags"><span>Recharge</span><span>Compare</span><span>Save Money</span></span>
+              <span class="post-tags" id="postTags"><span>Recharge</span><span>Compare</span><span>Save Money</span></span>
               <div class="post-share">
                 <span>Share</span>
                 <a href="#" aria-label="Share on WhatsApp"><svg class="ic"><use href="#i-whatsapp"></use></svg></a>
@@ -288,10 +293,10 @@
             </div>
 
             <div class="author-box">
-              <span class="author-avatar"><img src="assets/img/avatar_rohit_1786706448457.jpg" alt="Rohit Arora" loading="lazy"></span>
+              <span class="author-avatar"><img id="authorImg" src="assets/img/avatar_rohit_1786706448457.jpg" alt="Rohit Arora" loading="lazy"></span>
               <div>
-                <h3>Rohit Arora</h3>
-                <p>Founder of RechargeZone and the one who still runs the counter on Sundays. Writes honest guides using real numbers from our 2M+ transactions.</p>
+                <h3 id="authorName">Rohit Arora</h3>
+                <p id="authorBio">Founder of RechargeZone and the one who still runs the counter on Sundays. Writes honest guides using real numbers from our 2M+ transactions.</p>
                 <a href="about.html" class="card-link">About The Author <svg class="ic fwd"><use href="#i-arrow-right"></use></svg></a>
               </div>
             </div>
@@ -358,9 +363,9 @@
           <div class="card widget">
             <h3>Recent Posts</h3>
             <ul class="widget-list">
-              <li><a href="blog-details.html"><span class="w-thumb" style="background:linear-gradient(135deg,#12A5A8,#0F766E)"><img class="img" src="assets/img/blog_dth_comparison_1786707320519.jpg" alt="Tata Play vs Dish TV" loading="lazy"></span><span><strong>Tata Play vs Dish TV</strong><small>Aug 8, 2026</small></span></a></li>
-              <li><a href="blog-details.html"><span class="w-thumb" style="background:linear-gradient(135deg,#10B981,#059669)"><img class="img" src="assets/img/blog_electricity_bills_1786707427581.jpg" alt="Cut your electricity bill" loading="lazy"></span><span><strong>Cut Your Electricity Bill</strong><small>Aug 3, 2026</small></span></a></li>
-              <li><a href="blog-details.html"><span class="w-thumb" style="background:linear-gradient(135deg,#F59E0B,#DC2626)"><img class="img" src="assets/img/team_at_work_1786706380463.jpg" alt="Recharge scam checklist" loading="lazy"></span><span><strong>Recharge Scam Checklist</strong><small>Jul 28, 2026</small></span></a></li>
+              <li><a href="blog-details.html?post=dth-compare"><span class="w-thumb" style="background:linear-gradient(135deg,#12A5A8,#0F766E)"><img class="img" src="assets/img/blog_dth_comparison_1786707320519.jpg" alt="Tata Play vs Dish TV" loading="lazy"></span><span><strong>Tata Play vs Dish TV</strong><small>Aug 8, 2026</small></span></a></li>
+              <li><a href="blog-details.html?post=electricity-savings"><span class="w-thumb" style="background:linear-gradient(135deg,#10B981,#059669)"><img class="img" src="assets/img/blog_electricity_bills_1786707427581.jpg" alt="Cut your electricity bill" loading="lazy"></span><span><strong>Cut Your Electricity Bill</strong><small>Aug 3, 2026</small></span></a></li>
+              <li><a href="blog-details.html?post=scam-guide"><span class="w-thumb" style="background:linear-gradient(135deg,#F59E0B,#DC2626)"><img class="img" src="assets/img/team_at_work_1786706380463.jpg" alt="Recharge scam checklist" loading="lazy"></span><span><strong>Recharge Scam Checklist</strong><small>Jul 28, 2026</small></span></a></li>
             </ul>
           </div>
           <div class="card widget">
@@ -392,7 +397,7 @@
         <div class="stats-grid">
           <div class="stat-item reveal">
             <svg class="ic"><use href="#i-clock"></use></svg>
-            <div class="stat-num"><span data-count="8" data-suffix=" min">0</span></div>
+            <div class="stat-num"><span data-count="8" data-suffix=" min" id="statRead">0</span></div>
             <div class="stat-label">Read Time</div>
           </div>
           <div class="stat-item reveal" style="--d:.1s">
@@ -446,17 +451,17 @@
           <article class="card post-card reveal" style="--d:.05s" data-category="recharge">
             <div class="post-thumb" style="background:linear-gradient(135deg,#0B3B43,#0E7C7E)"><img class="img" src="assets/img/hero_cashback_offers_1786705723237.jpg" alt="Annual recharge plan math" loading="lazy"><span class="post-date">Jul 20</span></div>
             <div class="post-body">
-              <h3><a href="blog-details.html">Why You Should Recharge On A Plan, Not Per Month</a></h3>
+              <h3><a href="blog-details.html?post=annual-plan-math">Why You Should Recharge On A Plan, Not Per Month</a></h3>
               <p>The spreadsheet that convinced our Gold members to switch this year.</p>
-              <a href="blog-details.html" class="card-link">Read More <svg class="ic fwd"><use href="#i-arrow-right"></use></svg></a>
+              <a href="blog-details.html?post=annual-plan-math" class="card-link">Read More <svg class="ic fwd"><use href="#i-arrow-right"></use></svg></a>
             </div>
           </article>
           <article class="card post-card reveal" style="--d:.1s" data-category="recharge">
             <div class="post-thumb" style="background:linear-gradient(135deg,#0B3B43,#0E7C7E)"><img class="img" src="assets/img/blog_prepaid_plans_1786707172939.jpg" alt="Vi vs Jio vs Airtel prepaid plans" loading="lazy"><span class="post-date">Aug 12</span></div>
             <div class="post-body">
-              <h3><a href="blog-details.html">Vi vs Jio vs Airtel: Which Plan Fits Your Data Style?</a></h3>
+              <h3><a href="blog-details.html?post=prepaid-compare">Vi vs Jio vs Airtel: Which Plan Fits Your Data Style?</a></h3>
               <p>Side-by-side annual plans with real-world speed tests.</p>
-              <a href="blog-details.html" class="card-link">Read More <svg class="ic fwd"><use href="#i-arrow-right"></use></svg></a>
+              <a href="blog-details.html?post=prepaid-compare" class="card-link">Read More <svg class="ic fwd"><use href="#i-arrow-right"></use></svg></a>
             </div>
           </article>
         </div>
@@ -570,6 +575,211 @@
     </div>
   </div>
 
+  <script>
+    (function () {
+      var IMG = 'assets/img/';
+      function faq(items) {
+        var h = '<div class="faq-list" data-simple-faq>';
+        for (var i = 0; i < items.length; i++) {
+          h += '<div class="faq-item"><button class="faq-q" type="button" aria-expanded="false">' + items[i][0] + '<svg class="ic"><use href="#i-chevron-down"></use></svg></button><div class="faq-a"><div class="faq-a-inner">' + items[i][1] + '</div></div></div>';
+        }
+        return h + '</div>';
+      }
+      var posts = {
+        'prepaid-compare': {
+          title: 'Vi vs Jio vs Airtel: Which Prepaid Plan Fits Your Data Style?',
+          crumb: 'Plan Comparison',
+          cat: '<svg class="ic"><use href="#i-mobile"></use></svg> Recharge Guide',
+          author: 'Simran Kaur',
+          date: 'Aug 12, 2026',
+          read: 5,
+          img: 'blog_prepaid_plans_1786707172939.jpg',
+          alt: 'Vi vs Jio vs Airtel prepaid plans compared side by side',
+          lead: 'All three operators run similar-looking annual packs, but the right pick depends on your data habit, not the sticker price. Here is what our counter data says about who wins for light, medium and heavy users.',
+          avatar: IMG + 'avatar_simran_1786706478542.jpg',
+          bio: 'RechargeZone\u2019s plan-watcher. Tracks every price change across operators and updates our in-store comparison wall the same day.',
+          body: `<h2 id="cmp-how">How We Compare</h2>
+            <p>Every month we test network speeds at 14 points around the city on all three operators. Combined with 2M+ recharge transactions, it gives us a clear picture of who delivers what you pay for — not what the ad promises.</p>
+            <div class="table-wrap"><table class="data-table">
+              <thead><tr><th>Operator</th><th>Best for</th><th>Annual price</th><th>Daily data</th><th>Rupees per day</th></tr></thead>
+              <tbody>
+                <tr><td>Jio</td><td>Unlimited-style plans</td><td>Rs 2,999</td><td>2.5 GB</td><td>Rs 8.22</td></tr>
+                <tr><td>Airtel</td><td>Network reliability</td><td>Rs 3,299</td><td>2 GB</td><td>Rs 9.04</td></tr>
+                <tr><td>Vi</td><td>Heavy data users</td><td>Rs 2,799</td><td>3 GB</td><td>Rs 7.67</td></tr>
+              </tbody>
+            </table></div>
+            <h2 id="cmp-speed">Speed: What The Tests Say</h2>
+            <p>Jio and Airtel trade places near the metro stations, but Airtel holds its speed deeper into residential streets — which matters more for video calls than download speed records. Vi trails on average speed but its coverage has improved steadily through 2026.</p>
+            <div class="callout"><svg class="ic"><use href="#i-bolt"></use></svg><div><strong>Honest verdict:</strong> if you want the cheapest data, Vi wins. If you need reliability in the evenings, Airtel. Jio is the middle ground that most of our customers end up happiest with.</div></div>
+            <h2 id="cmp-verdict">The Verdict By Data Habit</h2>
+            <p>Under 1.5 GB a day, every operator\u2019s pack is fine — pick by network at home. Above 2 GB, the gap widens fast: Vi\u2019s 3 GB packs mean you rarely touch top-ups, while Jio and Airtel users with the same habit buy extra data at least twice a month.</p>
+            <h2 id="cmp-faq">Quick FAQ</h2>` + faq([
+              ['Does porting affect an annual plan?', 'Yes. If you might port, stay monthly until the number settles — unused validity is usually lost on port.']
+            ]),
+          tags: ['Recharge', 'Compare', 'Plans']
+        },
+        'dth-compare': {
+          title: 'Tata Play vs Dish TV: Pack Costs, HD Add-ons And Annual Deals',
+          crumb: 'DTH Showdown',
+          cat: '<svg class="ic"><use href="#i-satellite"></use></svg> DTH Guide',
+          author: 'Prakash Mishra',
+          date: 'Aug 8, 2026',
+          read: 6,
+          img: 'blog_dth_comparison_1786707320519.jpg',
+          alt: 'Tata Play and Dish TV set-top boxes compared',
+          lead: 'DTH pricing is confusing on purpose. Here is the plain-language breakdown we use at the counter every time a customer asks us to fix their bill.',
+          avatar: IMG + 'avatar_prakash_1786706607947.jpg',
+          bio: 'Handles every DTH activation and pack change in the shop. Knows the TRAI Tariff Order by heart.',
+          body: `<h2 id="dth-how">How Packs Actually Work</h2>
+            <p>You pay three things: the base pack (SD or HD), the network capacity fee, and any add-ons. Both platforms now push the same trick — advertising a low base price that quietly excludes the channels you actually watch.</p>
+            <h2 id="dth-price">The Price Breakdown</h2>
+            <div class="table-wrap"><table class="data-table">
+              <thead><tr><th>Item</th><th>Tata Play</th><th>Dish TV</th></tr></thead>
+              <tbody>
+                <tr><td>Base pack (100+ channels)</td><td>Rs 199</td><td>Rs 169</td></tr>
+                <tr><td>Network capacity fee</td><td>Rs 153</td><td>Rs 153</td></tr>
+                <tr><td>HD upgrade</td><td>Rs 75</td><td>Rs 65</td></tr>
+                <tr><td>Sports add-on</td><td>Rs 99</td><td>Rs 99</td></tr>
+              </tbody>
+            </table></div>
+            <p>The headline difference is the base pack: Dish TV is cheaper on paper, but its popular Hindi and regional packs need more add-ons to feel complete, which eats the savings.</p>
+            <h2 id="dth-annual">HD Add-ons And Annual Deals</h2>
+            <p>Both platforms offer annual vouchers around festive season. Tata Play\u2019s vouchers are more generous per rupee, but Dish TV occasionally bundles hardware refresh — worth it if your box is more than five years old.</p>
+            <div class="callout"><svg class="ic"><use href="#i-wallet"></use></svg><div><strong>Counter advice:</strong> bring your last bill to the shop. We compare your exact channel list against both platforms and switch you in under ten minutes — most customers save Rs 40\u201360 a month.</div></div>
+            <h2 id="dth-faq">Quick FAQ</h2>` + faq([
+              ['Do I need to buy a new box to switch?', 'Only if you change platform. Both brands run free hardware exchange offers for switchers most months.']
+            ]),
+          tags: ['DTH', 'Packs', 'Compare']
+        },
+        'electricity-savings': {
+          title: 'Electricity Bill Too High? 7 Legit Ways To Cut It This Summer',
+          crumb: 'Bills & Savings',
+          cat: '<svg class="ic"><use href="#i-bolt"></use></svg> Bills Guide',
+          author: 'Anita Nair',
+          date: 'Aug 3, 2026',
+          read: 4,
+          img: 'blog_electricity_bills_1786707427581.jpg',
+          alt: 'Electricity bill and a calculator on a table',
+          lead: 'Before you blame the AC, check the slab. Most summer bills jump for one boring reason: your cumulative usage crossed into the next tariff slab.',
+          avatar: IMG + 'avatar_anita_1786706698838.jpg',
+          bio: 'Runs the bill-payment counter and a rooftop solar experiment at home. Writes the savings guides from real household data.',
+          body: `<h2 id="elec-slabs">Slabs Are The Silent Tax</h2>
+            <p>Delhi\u2019s tariff is slabbed: the first 200 units are cheap, and every unit above that line costs noticeably more. Cross 400 units and the top slab almost doubles your per-unit rate — so your bill grows faster than your usage.</p>
+            <div class="callout"><svg class="ic"><use href="#i-bolt"></use></svg><div><strong>The fix:</strong> shift the heaviest appliances (washing machine, geyser, iron) to a single \u201cpower day\u201d and you can drop below the slab line entirely.</div></div>
+            <h2 id="elec-seven">The Seven Cuts That Actually Work</h2>
+            <p>Run ceiling fans instead of the AC before 9 pm — fans cost 60 watts, the AC 1,500. Set the AC at 24\u00b0C instead of 20\u00b0C; every degree saves about 6% of its consumption. Switch off the geyser when not bathing. Replace old tube lights with LED — we sell the bulbs at cost. Unplug TVs and set-top boxes at night. Wash clothes in one full load. And check for \u201cphantom\u201d devices like water coolers left on all day.</p>
+            <h2 id="elec-meter">When To Check The Meter</h2>
+            <p>Read your meter on the first of the month and compare it with the bill. A mismatch of more than 5% means a faulty reading or a leak — dispute it at the counter and we will file the complaint for you.</p>
+            <h2 id="elec-faq">Quick FAQ</h2>` + faq([
+              ['Does paying early give a discount?', 'Yes — paying by the due date keeps you eligible for the late-fee waiver and prevents penalty compounding.']
+            ]),
+          tags: ['Bills', 'Save Money', 'Summer']
+        },
+        'scam-guide': {
+          title: 'Recharge Scams Are Rising: How To Pay Bills Without Getting Burned',
+          crumb: 'Stay Safe',
+          cat: '<svg class="ic"><use href="#i-shield"></use></svg> Security Guide',
+          author: 'Rohit Arora',
+          date: 'Jul 28, 2026',
+          read: 7,
+          img: 'team_at_work_1786706380463.jpg',
+          alt: 'RechargeZone team at the counter handling customer requests',
+          lead: 'Three customers in the last month almost lost money to \u201cKYC expiry\u201d calls. None of them clicked the link. Here is the exact checklist we teach everyone at the counter.',
+          avatar: IMG + 'avatar_rohit_1786706448457.jpg',
+          bio: 'Founder of RechargeZone and the one who still runs the counter on Sundays. Writes honest guides using real numbers from our 2M+ transactions.',
+          body: `<h2 id="scam-three">The Three Scams We See</h2>
+            <p>The \u201cKYC expired\u201d link is the top one — an SMS pretending to be your operator, a fake login page, and your wallet is gone. Then comes the \u201crefund\u201d call asking for an OTP to reverse a charge that never happened. And the \u201cassisted recharge\u201d caller who offers a discount if you share your number on WhatsApp and install an app.</p>
+            <h2 id="scam-five">The 5-Minute Checklist</h2>
+            <p>Never click links in unsolicited SMS about your number. Never share an OTP, ever — no bank or operator asks for it. Verify any \u201coperator\u201d caller by hanging up and calling the official helpline. Check the sender ID: official messages come from 5-digit service numbers, not 10-digit mobile numbers. And when a deal sounds too good, compare it here — we price-match legitimate offers daily.</p>
+            <div class="callout"><svg class="ic"><use href="#i-shield"></use></svg><div><strong>If you already shared something:</strong> block your SIM immediately through your operator\u2019s helpline, freeze the wallet apps, and register the incident with the cyber cell. Speed matters more than embarrassment.</div></div>
+            <h2 id="scam-counter">Why The Counter Is Safer</h2>
+            <p>When you recharge in person, your number, OTP and money never touch an unverified screen. We are a licensed distributor, so the transaction runs through the same operator terminal an app uses — just without the phishing surface.</p>
+            <h2 id="scam-faq">Quick FAQ</h2>` + faq([
+              ['A caller knew my number and operator. Is my SIM cloned?', 'Almost never. Numbers and operators are leaked data that scammers buy in bulk. Change nothing, share nothing, and the call ends there.']
+            ]),
+          tags: ['Tips', 'Security', 'Scams']
+        },
+        'annual-plan-math': {
+          title: 'Why You Should Recharge On A Plan, Not Per Month: The Annual Plan Math',
+          crumb: 'Money Guide',
+          cat: '<svg class="ic"><use href="#i-wallet"></use></svg> Money Guide',
+          author: 'Simran Kaur',
+          date: 'Jul 20, 2026',
+          read: 3,
+          img: 'hero_cashback_offers_1786705723237.jpg',
+          alt: 'Cashback offers and savings shown on a phone',
+          lead: 'The spreadsheet that convinced our Gold members to switch this year. It takes one number to understand: rupees per day.',
+          avatar: IMG + 'avatar_simran_1786706478542.jpg',
+          bio: 'RechargeZone\u2019s plan-watcher. Tracks every price change across operators and updates our in-store comparison wall the same day.',
+          body: `<h2 id="math-spreadsheet">The Spreadsheet</h2>
+            <div class="table-wrap"><table class="data-table">
+              <thead><tr><th>Recharge style</th><th>Yearly cost</th><th>Bonus data</th><th>Money lost</th></tr></thead>
+              <tbody>
+                <tr><td>Monthly Rs 239 x 12</td><td>Rs 2,868</td><td>None</td><td>Rs 0</td></tr>
+                <tr><td>Annual plan Rs 2,999</td><td>Rs 2,999</td><td>+30 days + 10 GB</td><td>+Rs 131 upfront</td></tr>
+                <tr><td>Monthly + top-ups (real habit)</td><td>Rs 3,400+</td><td>None</td><td>Rs 400+ lost</td></tr>
+              </tbody>
+            </table></div>
+            <p>The mistake everyone makes is comparing Rs 239 to Rs 2,999 directly. Annual plans bundle the daily data that monthly users end up buying as separate top-ups — which is where the real leakage happens.</p>
+            <h2 id="math-catch">The Recharge-Day Catch</h2>
+            <p>Operators run campaign days a few times a year where annual plans ship with extra validity or data. Recharging on those days is free money. Gold members get the schedule on WhatsApp; everyone else can ask at the counter.</p>
+            <div class="callout"><svg class="ic"><use href="#i-percent"></use></svg><div><strong>Annual + counter cashback:</strong> we pass operator commission back as up to 7% wallet cashback, which makes the annual plan cheaper than monthly in the very first year.</div></div>
+            <h2 id="math-faq">Quick FAQ</h2>` + faq([
+              ['What if I want to port later?', 'Buy monthly for the first cycle after porting, then lock the annual plan. Unused validity is lost on port in most cases.']
+            ]),
+          tags: ['Recharge', 'Money', 'Plans']
+        },
+        'water-bills-101': {
+          title: 'Water Bills 101: Reading Your DJB Bill, Arrears And Deposits',
+          crumb: 'Bills & Utilities',
+          cat: '<svg class="ic"><use href="#i-droplet"></use></svg> Bills Guide',
+          author: 'Anita Nair',
+          date: 'Jul 14, 2026',
+          read: 4,
+          img: 'hero_utility_bills_1786705702206.jpg',
+          alt: 'Utility bills and payments illustration',
+          lead: 'A water bill has four numbers that matter and a few that are designed to confuse. Here is what each one means before you pay.',
+          avatar: IMG + 'avatar_anita_1786706698838.jpg',
+          bio: 'Runs the bill-payment counter and a rooftop solar experiment at home. Writes the savings guides from real household data.',
+          body: `<h2 id="djb-anatomy">Anatomy Of A DJB Bill</h2>
+            <p>The billed amount is only the consumption charge for the last cycle. The two numbers to check are arrears — unpaid older cycles being added on — and the fixed monthly charge, which applies even with zero consumption. Disconnection status and connection type change everything else.</p>
+            <h2 id="djb-arrears">Arrears And Deposits</h2>
+            <p>Arrears sneak in after a missed or contested cycle and then compound. Deposits are the security money held by the board — refundable, but usually forgotten when people move. If you are moving, ask us how to file the transfer, or the deposit follows the connection, not you.</p>
+            <h2 id="djb-dispute">When To Dispute</h2>
+            <p>Dispute if consumption doubled with no change in household, if the meter reading is estimated (marked E instead of A), or if you see a \u201cminimum\u201d charge on a vacant property. We file disputes from the counter and track them for you.</p>
+            <div class="callout"><svg class="ic"><use href="#i-droplet"></use></svg><div><strong>Pro tip:</strong> save a photo of the meter on the bill date every month. One photo settles most disputes before they start.</div></div>
+            <h2 id="djb-faq">Quick FAQ</h2>` + faq([
+              ['Can I pay a partial amount?', 'Yes, partial payments are accepted, but arrears are collected first — pay the full billed amount to stop the cycle.']
+            ]),
+          tags: ['Bills', 'Water', 'DJB']
+        }
+      };
+      var slug = new URLSearchParams(location.search).get('post');
+      var post = posts[slug];
+      if (post) {
+        document.getElementById('bd-banner-title').textContent = post.title;
+        document.getElementById('bdCrumbTitle').textContent = post.crumb;
+        document.getElementById('bdCatChip').innerHTML = post.cat;
+        document.getElementById('bdMetaAuthor').textContent = post.author;
+        document.getElementById('bdMetaDate').textContent = post.date;
+        document.getElementById('bdMetaRead').textContent = post.read + ' min read';
+        var img = document.getElementById('postImg');
+        img.src = IMG + post.img;
+        img.alt = post.alt;
+        document.getElementById('postLead').textContent = post.lead;
+        document.getElementById('postBody').innerHTML = post.body;
+        var tags = '';
+        for (var i = 0; i < post.tags.length; i++) tags += '<span>' + post.tags[i] + '</span>';
+        document.getElementById('postTags').innerHTML = tags;
+        document.getElementById('authorImg').src = post.avatar;
+        document.getElementById('authorName').textContent = post.author;
+        document.getElementById('authorBio').textContent = post.bio;
+        var sr = document.getElementById('statRead');
+        if (sr) sr.setAttribute('data-count', post.read);
+        document.title = post.title + ' \u2014 RechargeZone Blog';
+      }
+    })();
+  </script>
   <script src="assets/js/main.js"></script>
 </body>
 </html>
