@@ -222,7 +222,7 @@ p { margin: 0 0 14px; }
 [data-theme="dark"] .nav-link:hover, [data-theme="dark"] .nav-link.active { color: #5EEAD4; }
 .nav-link:hover::after, .nav-link.active::after { transform: scaleX(1); }
 .header-actions { display: flex; align-items: center; gap: 10px; }
-.icon-btn { width: 44px; height: 44px; border-radius: var(--radius-sm); display: grid; place-items: center; background: var(--bg-soft); color: var(--text-1); position: relative; transition: background .3s, color .3s, transform .3s var(--ease); }
+.icon-btn { width: 44px; height: 44px; border-radius: var(--radius-sm); display: grid; place-items: center; background: var(--bg-soft); color: var(--text-1); position: relative; transition: background .3s, color .3s, transform .3s var(--ease); cursor: pointer; touch-action: manipulation; -webkit-tap-highlight-color: transparent; }
 .icon-btn:hover { background: rgba(14, 124, 126, .14); color: var(--violet); transform: translateY(-2px); }
 [data-theme="dark"] .icon-btn:hover { color: #5EEAD4; }
 .icon-btn .ic { width: 20px; height: 20px; }

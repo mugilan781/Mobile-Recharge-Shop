@@ -32,7 +32,9 @@
 
     var pre = $('#preloader');
     if (pre) {
-      var minShow = 970;
+      var seen = lsGet('rz-visited');
+      if (!seen) lsSet('rz-visited', '1');
+      var minShow = seen ? 100 : 970;
       var wait = Math.max(0, minShow - (Date.now() - preStart));
       setTimeout(function () {
         pre.classList.add('done');
