@@ -25,6 +25,11 @@
   syncDirLabel();
 
   window.addEventListener('load', function () {
+    $$('a[aria-label="Facebook"]').forEach(function (a) { a.href = 'https://facebook.com'; a.target = '_blank'; a.rel = 'noopener'; });
+    $$('a[aria-label="Instagram"]').forEach(function (a) { a.href = 'https://instagram.com'; a.target = '_blank'; a.rel = 'noopener'; });
+    $$('a[aria-label="X"]').forEach(function (a) { a.href = 'https://x.com'; a.target = '_blank'; a.rel = 'noopener'; });
+    $$('a[aria-label="WhatsApp"]').forEach(function (a) { a.href = 'https://wa.me/919876543210'; a.target = '_blank'; a.rel = 'noopener'; });
+
     var pre = $('#preloader');
     if (pre) {
       var minShow = 970;
