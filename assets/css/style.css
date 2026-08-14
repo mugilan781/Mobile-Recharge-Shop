@@ -204,7 +204,7 @@ p { margin: 0 0 14px; }
 
 .brand { display: inline-flex; align-items: center; gap: 12px; }
 .brand-mark { width: 46px; height: 46px; border-radius: 14px; background: var(--grad-primary); display: grid; place-items: center; box-shadow: 0 10px 22px -8px rgba(14,124,126,.55); }
-.brand-mark .ic { width: 24px; height: 24px; color: #fff; }
+.brand-mark .ic { width: 26px; height: 26px; color: #fff; }
 .brand-text { font-family: var(--font-head); font-weight: 800; font-size: 1.45rem; color: var(--text-1); letter-spacing: -.03em; }
 .brand-text em { font-style: normal; background: var(--grad-primary); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 
