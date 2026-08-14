@@ -274,22 +274,24 @@
           </form>
         </div>
         <div class="map-card reveal">
-          <div class="map-frame" aria-label="RechargeZone location map">
-            <span class="grad"></span><span class="grid-pat"></span>
-            <span class="map-pin"><svg class="ic"><use href="#i-map-pin"></use></svg></span>
-            <span class="map-pulse"></span>
-            <div class="map-badge">
-              <strong>RechargeZone</strong>
-              <span>Shop #12, City Plaza, New Delhi 110001</span>
-              <span class="map-link"><svg class="ic"><use href="#i-navigation"></use></svg> Get Directions</span>
+          <div class="map-frame">
+            <iframe src="https://www.google.com/maps?q=Shop+12,+City+Plaza,+New+Delhi+110001&output=embed" width="100%" height="360" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="RechargeZone location on Google Maps"></iframe>
+          </div>
+          <div class="card visit-card">
+            <span class="card-icon"><svg class="ic"><use href="#i-map-pin"></use></svg></span>
+            <div>
+              <h3>Visit The Shop</h3>
+              <p>Shop #12, City Plaza, New Delhi 110001 · 2 min from Metro Gate 3</p>
+              <a href="https://www.google.com/maps/dir/?api=1&destination=Shop+12,+City+Plaza,+New+Delhi+110001" target="_blank" rel="noopener" class="btn btn-outline btn-sm"><svg class="ic"><use href="#i-navigation"></use></svg> Get Directions</a>
             </div>
           </div>
-          <div class="store-status">
-            <div class="status-row">
-              <span class="status-dot" data-store-status></span>
-              <strong id="status-text">Checking our store status...</strong>
+          <div class="card visit-card">
+            <span class="card-icon" style="background:var(--grad-cyan)"><svg class="ic"><use href="#i-clock"></use></svg></span>
+            <div>
+              <h3>Shop Hours</h3>
+              <p>Mon–Sat: 8:00 AM – 9:30 PM</p>
+              <p class="sub">Sunday: 10:00 AM – 6:00 PM</p>
             </div>
-            <span class="status-sub" id="status-note">We check availability every 30 seconds</span>
           </div>
         </div>
       </div>
@@ -314,27 +316,6 @@
       </div>
     </section>
 
-    <section class="section" aria-labelledby="ct-corp-title">
-      <div class="container">
-        <div class="card corp-card reveal">
-          <div class="corp-media">
-            <span class="grad" aria-hidden="true"></span>
-            <span class="grid-pat" aria-hidden="true"></span>
-            <span class="corp-ic"><svg class="ic"><use href="#i-briefcase"></use></svg></span>
-          </div>
-          <div class="corp-body">
-            <span class="eyebrow"><svg class="ic"><use href="#i-briefcase"></use></svg> For Business</span>
-            <h2 id="ct-corp-title">Need Bulk Recharge Or A Corporate Account?</h2>
-            <p>Our corporate desk handles offices, societies, schools and resellers with wholesale rates, GST invoices and Net-30 credit. Ask for Prakash — he answers within one business day.</p>
-            <div class="slide-actions" style="margin:0">
-              <a href="services.html#corp-form" class="btn btn-primary btn-lg">Request Bulk Quote <svg class="ic fwd"><use href="#i-arrow-right"></use></svg></a>
-              <a href="https://wa.me/919876543210" class="btn btn-outline btn-lg">WhatsApp The Desk</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <section class="section section-soft" aria-labelledby="ct-faq-title">
       <div class="container">
         <div class="section-head reveal">
@@ -342,9 +323,9 @@
           <h2 id="ct-faq-title">Before You <span class="grad-text">Reach Out</span></h2>
         </div>
         <div class="faq-list reveal">
-          <div class="faq-item is-open">
-            <button class="faq-q" type="button" aria-expanded="true">What's the fastest way to get help?<svg class="ic"><use href="#i-chevron-down"></use></svg></button>
-            <div class="faq-a" style="max-height:200px"><div class="faq-a-inner">WhatsApp on +91 98765 43210 during shop hours. For failed transactions, the refund is usually processed automatically within minutes — message us the txn ID and we'll confirm.</div></div>
+          <div class="faq-item">
+            <button class="faq-q" type="button" aria-expanded="false">What's the fastest way to get help?<svg class="ic"><use href="#i-chevron-down"></use></svg></button>
+            <div class="faq-a"><div class="faq-a-inner">WhatsApp on +91 98765 43210 during shop hours. For failed transactions, the refund is usually processed automatically within minutes — message us the txn ID and we'll confirm.</div></div>
           </div>
           <div class="faq-item">
             <button class="faq-q" type="button" aria-expanded="false">Do I need an appointment to visit?<svg class="ic"><use href="#i-chevron-down"></use></svg></button>
