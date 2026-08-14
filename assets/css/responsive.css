@@ -48,7 +48,6 @@
   .header-cta { display: none; }
   .recharge-wrap { margin-top: 0; }
   .recharge-panel { padding: 28px; }
-  .hero-slider { min-height: 600px; }
   .t-card { flex-basis: 50%; }
   .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
   .contact-layout { grid-template-columns: 1fr; }
@@ -80,8 +79,7 @@
   .recharge-head { justify-content: center; text-align: center; }
   .recharge-tabs { justify-content: center; width: 100%; border-radius: var(--radius); }
   .hero-float { display: none; }
-  .hero-slider { min-height: 560px; }
-  .slide-inner { padding-block: 80px 110px; }
+  .slide-inner { padding-block: 52px 88px; }
   .cta-band { padding: 48px 24px; }
   .newsletter-form { max-width: 100%; flex-direction: column; }
   .form-grid { grid-template-columns: 1fr; }
