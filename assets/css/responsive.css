@@ -28,6 +28,7 @@
   .section { padding-block: 76px; }
   .topbar-left span { display: none; }
   .split { grid-template-columns: 1fr; gap: 34px; }
+  .split .reveal-left, .split .reveal-right { transform: none; }
   .policy-layout { grid-template-columns: 1fr; }
   .toc-widget { position: static; }
   .sitemap-grid { grid-template-columns: repeat(2, 1fr); }
@@ -178,7 +179,9 @@
   .header-actions { gap: 7px; }
   .icon-btn { width: 40px; height: 40px; }
   .dir-label { font-size: .74rem; letter-spacing: .06em; }
+  .btn { white-space: normal; text-align: center; }
   .slide-actions .btn { width: 100%; }
+  .text-center .btn { width: 100%; justify-content: center; }
   .slide-trust { justify-content: center; }
   .steps-grid { grid-template-columns: 1fr; }
   .operator-pick { grid-template-columns: 1fr; }
@@ -187,7 +190,9 @@
   .count-box .num { font-size: 1.9rem; }
   .cookie { left: 12px; right: 12px; max-width: none; }
   .slider-arrow { width: 40px; height: 40px; }
-  .stats-grid { grid-template-columns: 1fr 1fr; gap: 18px; }
+  .stats-grid { grid-template-columns: 1fr; gap: 16px; }
+  .stat-num, .stat-card-num { white-space: nowrap; }
+  .stats-band .stats-grid { padding-block: 8px; }
   .experience-badge { padding: 14px 18px; }
   .back-top { bottom: 18px; right: 18px; }
   [dir="rtl"] .back-top { right: auto; left: 18px; }
