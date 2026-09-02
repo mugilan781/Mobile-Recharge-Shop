@@ -201,7 +201,7 @@
   .icon-btn { width: 36px; height: 36px; }
   .nav-toggle .ic { width: 17px; height: 17px; }
   .brand { gap: 8px; }
-  .brand-mark { width: 40px; height: 40px; border-radius: 12px; }
+  .brand-mark { width: 40px; height: 40px; border-radius: 50%; }
   .brand-text { font-size: clamp(.95rem, 5vw, 1.15rem); }
   .err-code { gap: 10px; font-size: clamp(4.8rem, 26vw, 6.5rem); margin-bottom: 16px; }
   .err-actions { flex-direction: column; }
@@ -211,10 +211,10 @@
   .err-links { gap: 10px; margin-top: 28px; }
   .err-links span { flex-basis: 100%; text-align: center; }
   .maintenance-wrap { padding: 40px 18px; }
-  .maint-ic { width: 84px; height: 84px; border-radius: 24px; margin-bottom: 26px; }
+  .maint-ic { width: 84px; height: 84px; border-radius: 50%; margin-bottom: 26px; }
   .maint-ic .ic { width: 40px; height: 40px; }
   .maint-logo { margin-bottom: 30px; }
-  .logo-mark { width: 46px; height: 46px; border-radius: 14px; }
+  .logo-mark { width: 46px; height: 46px; border-radius: 50%; }
   .logo-mark .ic { width: 23px; height: 23px; }
   .logo-text { font-size: 1.3rem; }
   .countdown { gap: 8px; }
@@ -296,7 +296,7 @@
   .step-card { padding: 30px 18px 26px; }
   .team-card { padding: 24px 18px; }
   .sm-card { gap: 12px; }
-  .sm-card .sm-ic { width: 42px; height: 42px; border-radius: 12px; }
+  .sm-card .sm-ic { width: 42px; height: 42px; border-radius: 50%; }
   .sm-card .sm-ic .ic { width: 20px; height: 20px; }
   .hero-slider { min-height: min(calc(100vh - 80px), 640px); }
 }
