@@ -107,6 +107,9 @@
   .mock-wallet { padding: 22px; }
   .t-inner { padding: 28px; }
   .fp-tag { font-size: .74rem; }
+  .wallet-grid { grid-template-columns: 1fr; }
+  .wallet-banner { padding: 26px 22px; }
+  .wallet-banner-content { flex-direction: column; align-items: flex-start; }
 }
 
 @media (max-width: 768px) {
