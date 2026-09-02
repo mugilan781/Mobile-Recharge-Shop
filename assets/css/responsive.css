@@ -116,7 +116,7 @@
   .mock-wallet { padding: 22px; }
   .t-inner { padding: 28px; }
   .fp-tag { font-size: .74rem; }
-  .wallet-grid { grid-template-columns: 1fr; }
+  .wallet-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
   .wallet-banner { padding: 26px 22px; }
   .wallet-banner-content { flex-direction: column; align-items: flex-start; }
 }
@@ -126,20 +126,21 @@
   .topbar-social { gap: 2px; }
   .section { padding-block: 62px; }
   .section-head { margin-bottom: 40px; }
-  .services-grid, .feature-grid, .offers-grid, .pricing-grid, .blog-grid, .operators-grid, .team-grid, .sitemap-grid, .vision-grid { grid-template-columns: 1fr; }
-  .info-grid { grid-template-columns: 1fr; }
+  .services-grid, .feature-grid, .offers-grid, .pricing-grid, .blog-grid, .team-grid, .sitemap-grid, .vision-grid, .wallet-grid, .info-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+  .operators-grid { grid-template-columns: repeat(2, 1fr); gap: 14px; }
+  .steps-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; }
+  .footer-grid { grid-template-columns: repeat(2, 1fr); gap: 30px; }
+  .rz-row { grid-template-columns: repeat(2, 1fr); gap: 14px; }
   .fp-body { padding: 30px 26px; }
   .post-thumb { height: 190px; }
   .post-tags-row { justify-content: flex-start; }
   .newsletter-card { grid-template-columns: 1fr; justify-items: center; text-align: center; padding: 42px 26px; }
   .nl-group { flex-direction: column; }
-  .footer-grid { grid-template-columns: 1fr; gap: 34px; }
   .footer-bottom-inner { justify-content: center; text-align: center; }
   .corp-card { grid-template-columns: 1fr; }
   .corp-body { padding: 32px 26px; }
   .corp-media { min-height: 220px; }
   .timings-card .timing-day { padding: 14px 18px; font-size: .9rem; }
-  .rz-row { grid-template-columns: 1fr; }
   .operator-pick { grid-template-columns: repeat(2, 1fr); }
   .recharge-head { justify-content: center; text-align: center; }
   .recharge-tabs { justify-content: center; width: 100%; border-radius: var(--radius); }
@@ -199,6 +200,7 @@
 
 @media (max-width: 560px) {
   .container { padding-inline: 18px; }
+  .services-grid, .feature-grid, .offers-grid, .pricing-grid, .blog-grid, .operators-grid, .team-grid, .sitemap-grid, .vision-grid, .footer-grid, .wallet-grid, .info-grid, .steps-grid, .stats-grid, .operator-pick, .rz-row { grid-template-columns: 1fr; }
   .header-actions { gap: 7px; }
   .icon-btn { width: 40px; height: 40px; }
   .dir-label { font-size: .74rem; letter-spacing: .06em; }
