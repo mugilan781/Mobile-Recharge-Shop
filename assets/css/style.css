@@ -1355,7 +1355,7 @@ textarea.field-input { min-height: 140px; resize: vertical; padding: 14px 16px; 
 
 /* ---------- Table ---------- */
 .data-table { width: 100%; border-collapse: collapse; font-size: .93rem; }
-.data-table th { font-family: var(--font-head); font-weight: 700; color: #fff; background: var(--grad-primary); text-align: center; padding: 16px 14px; border: 1px solid rgba(255,255,255,.18); vertical-align: middle; }
+.data-table th { font-family: var(--font-head); font-weight: 700; color: #fff; background: var(--indigo); text-align: center; padding: 16px 14px; border: 1px solid rgba(255,255,255,.18); vertical-align: middle; }
 .data-table td { padding: 14px 14px; border: 1px solid var(--border-2); color: var(--text-2); text-align: center; vertical-align: middle; }
 .data-table tr:hover td { background: var(--bg-soft); }
 .table-wrap { overflow-x: auto; border: 1.5px solid var(--border-2); border-radius: var(--radius); box-shadow: var(--shadow-sm); }
