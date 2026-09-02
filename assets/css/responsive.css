@@ -39,8 +39,10 @@
 
 @media (max-width: 992px) {
   html, body { overflow-x: hidden; overflow-x: clip; }
-  .hero-static { min-height: auto; }
+  .hero-static { height: auto; min-height: auto; }
+  .hero-static .slide { position: relative; inset: auto; width: 100%; height: auto; display: block; }
   .hero-static .slide-inner { padding-block: 44px 64px; }
+  .hero-slider { height: auto; min-height: min(calc(100vh - 64px), 640px); }
   .hero-split { grid-template-columns: 1fr; gap: 44px; }
   .hero-mock { max-width: 440px; margin-inline: auto; }
   .nav-toggle { display: grid; }
