@@ -122,8 +122,9 @@
   .t-inner { padding: 28px; }
   .fp-tag { font-size: .74rem; }
   .wallet-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
-  .wallet-banner { padding: 26px 22px; }
-  .wallet-banner-content { flex-direction: column; align-items: flex-start; }
+  .wallet-banner { padding: 26px 22px; margin-top: 28px; }
+  .wallet-banner-content { flex-direction: column; align-items: flex-start; gap: 20px; }
+  .wallet-banner-info h3 { font-size: clamp(1.1rem, 3vw, 1.4rem); }
 }
 
 @media (max-width: 768px) {
@@ -209,6 +210,11 @@
 @media (max-width: 560px) {
   .container { padding-inline: 18px; }
   .services-grid, .feature-grid, .offers-grid, .pricing-grid, .blog-grid, .operators-grid, .team-grid, .sitemap-grid, .vision-grid, .footer-grid, .wallet-grid, .info-grid, .steps-grid, .stats-grid, .operator-pick, .rz-row { grid-template-columns: 1fr; }
+  .wallet-banner { padding: 22px 18px; margin-top: 24px; }
+  .wallet-banner-info h3 { font-size: clamp(1rem, 4.5vw, 1.25rem); margin: 10px 0 6px; }
+  .wallet-banner-info p { font-size: .88rem; }
+  .wallet-banner-actions { flex-direction: column; align-items: stretch; gap: 10px; width: 100%; }
+  .wallet-banner-actions .btn { width: 100%; justify-content: center; }
   .header-actions { gap: 7px; }
   .icon-btn { width: 40px; height: 40px; }
   .dir-label { font-size: .74rem; letter-spacing: .06em; }

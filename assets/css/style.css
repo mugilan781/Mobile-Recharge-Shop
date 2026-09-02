@@ -933,7 +933,8 @@ select.field-input.has-icon { padding-inline-start: 48px; }
   flex-wrap: wrap;
 }
 .wallet-banner-info {
-  flex: 1 1 500px;
+  flex: 1 1 100%;
+  min-width: 0;
 }
 .wallet-banner-info h3 {
   font-size: clamp(1.3rem, 2.2vw, 1.65rem);
