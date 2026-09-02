@@ -1077,14 +1077,14 @@ select.field-input.has-icon { padding-inline-start: 48px; }
 .vision-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
 
 /* ---------- Team ---------- */
-.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
-.team-card { text-align: center; padding: 30px 22px; }
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; align-items: stretch; grid-auto-rows: 1fr; }
+.team-card { text-align: center; padding: 30px 22px; display: flex; flex-direction: column; align-items: center; height: 100%; }
 .team-avatar { width: 96px; height: 96px; margin: 0 auto 18px; border-radius: 50%; display: grid; place-items: center; font-family: var(--font-head); font-weight: 800; font-size: 1.7rem; color: #fff; box-shadow: 0 14px 30px -10px rgba(14,124,126,.4); }
 .team-card h3 { font-size: 1.12rem; margin-bottom: 2px; }
 .team-card .team-role { color: var(--violet); font-size: .85rem; font-weight: 600; font-family: var(--font-head); display: block; margin-bottom: 12px; }
 [data-theme="dark"] .team-card .team-role { color: #5EEAD4; }
-.team-card p { font-size: .88rem; margin-bottom: 16px; }
-.team-social { display: flex; justify-content: center; gap: 8px; }
+.team-card p { font-size: .88rem; margin-bottom: 16px; flex: 1 1 auto; min-height: 3.2rem; }
+.team-social { display: flex; justify-content: center; align-items: center; gap: 8px; margin-top: auto; width: 100%; min-height: 36px; }
 .team-social a { width: 36px; height: 36px; border-radius: 50%; background: var(--bg-soft); display: grid; place-items: center; color: var(--text-2); }
 .team-social a:hover { background: var(--grad-primary); color: #fff; transform: translateY(-3px); }
 .team-social .ic { width: 16px; height: 16px; }
