@@ -935,13 +935,15 @@ select.field-input.has-icon { padding-inline-start: 48px; }
 .blog-meta { display: flex; align-items: center; gap: 16px; font-size: .8rem; color: var(--text-3); margin-bottom: 12px; }
 .blog-meta span { display: inline-flex; align-items: center; gap: 6px; }
 .blog-meta .ic { width: 14px; height: 14px; color: var(--violet); }
-.blog-card h3 { font-size: 1.2rem; margin-bottom: 10px; }
+.blog-card h3 { font-size: 1.2rem; margin-bottom: 10px; line-height: 1.4; min-height: 3.36rem; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 .blog-card h3 a { color: inherit; }
 .blog-card h3 a:hover { color: var(--violet); }
 .blog-card-body p { font-size: .93rem; color: var(--text-3); margin-bottom: 18px; flex: 1; }
-.blog-card-footer { display: flex; align-items: center; justify-content: space-between; border-top: 1px dashed var(--border); padding-top: 18px; }
-.blog-author { display: flex; align-items: center; gap: 10px; font-size: .85rem; color: var(--text-2); }
-.blog-author .avatar { width: 36px; height: 36px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-family: var(--font-head); font-weight: 700; font-size: .74rem; }
+.blog-card-footer { display: flex; align-items: center; justify-content: space-between; gap: 12px; border-top: 1px dashed var(--border); padding-top: 18px; margin-top: auto; min-height: 54px; }
+.blog-author { display: flex; align-items: center; gap: 10px; font-size: .85rem; color: var(--text-2); flex: 1; min-width: 0; }
+.blog-author .avatar { width: 36px; height: 36px; min-width: 36px; min-height: 36px; border-radius: 50%; display: grid; place-items: center; color: #fff; font-family: var(--font-head); font-weight: 700; font-size: .74rem; overflow: hidden; flex: none; background: #fff; border: 1px solid var(--border); box-shadow: 0 1px 6px rgba(15,23,42,.08); }
+.blog-author .avatar img { width: 100%; height: 100%; object-fit: cover; object-position: center; display: block; border-radius: 50%; }
+.blog-card-footer .card-link { flex: none; white-space: nowrap; }
 
 .blog-filter { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 44px; }
 .filter-btn { padding: 10px 22px; border-radius: var(--radius-full); border: 1.5px solid var(--border-2); font-family: var(--font-head); font-weight: 600; font-size: .88rem; color: var(--text-2); transition: all .3s var(--ease); }
