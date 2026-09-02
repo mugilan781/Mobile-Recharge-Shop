@@ -323,12 +323,14 @@ body.nav-open .nav-toggle .i-close { display: block; }
   .hero-slider .slide-actions { margin-bottom: 18px; }
   .hero-slider .slide-trust { display: none; }
   .hero-float { display: none; }
+  .hero-static .slide-inner { padding-block: 48px 88px; }
 }
 
 /* ---------- Home 2: Hero Static (Split Layout) ---------- */
-.hero-static { position: relative; overflow: hidden; }
+.hero-static { position: relative; overflow: hidden; min-height: 100vh; }
+.hero-static .slide { width: 100%; height: 100%; }
 .hero-static .slide-bg { position: absolute; inset: 0; z-index: 0; }
-.hero-static .slide-inner { position: relative; z-index: 3; max-width: 100%; text-align: start; }
+.hero-static .slide-inner { position: relative; z-index: 3; max-width: 1240px; text-align: start; min-height: 100vh; display: flex; align-items: center; padding-block: 60px 96px; }
 .hero-static .slide-inner .badge { margin-inline: 0; }
 .hero-static .slide-stagger { opacity: 1; transform: none; }
 .hero-static .slide-stagger.d1 { animation: fadeUp .7s var(--ease) .15s both; }
